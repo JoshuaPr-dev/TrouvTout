@@ -1,0 +1,202 @@
+/* Header Leboncoin */
+.main-header-leboncoin {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px #0001;
+  padding: 18px 0 14px 0;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 0 0 12px 12px;
+  z-index: 100;
+}
+.header-btn {
+  padding: 10px 22px;
+  font-size: 1em;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  box-shadow: 0 1px 6px #0001;
+}
+.header-btn-orange {
+  background: #ff6f00;
+  color: #fff;
+}
+.header-btn-orange:hover {
+  background: #e65100;
+}
+.header-btn-yellow {
+  background: #ffc107;
+  color: #333;
+}
+.header-btn-yellow:hover {
+  background: #ffb300;
+}
+.header-btn-outline {
+  background: #fff;
+  color: #ff6f00;
+  border: 1.5px solid #ff6f00;
+}
+.header-btn-outline:hover {
+  background: #ff6f00;
+  color: #fff;
+}
+.header-btn-red {
+  background: #d32f2f;
+  color: #fff;
+}
+.header-btn-red:hover {
+  background: #b71c1c;
+}
+/* Thème Leboncoin pour la page Annonces */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+}
+
+.container {
+  background: #fff;
+  max-width: 650px;
+  margin: 40px auto 0 auto;
+  padding: 32px 28px 28px 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #0001;
+}
+
+h1,
+h2,
+h3 {
+  color: #ff6f00;
+  margin-top: 0;
+  font-weight: 700;
+}
+h2,
+h3 {
+  color: #00bfa5;
+  font-weight: 600;
+}
+
+label {
+  font-weight: 500;
+  color: #444;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+  margin-bottom: 12px;
+}
+button,
+.fetch-btn,
+.edit-btn,
+.delete-btn {
+  background: #ff6f00;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 8px;
+  margin-top: 5px;
+  font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 6px #0001;
+}
+button:hover,
+.fetch-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+  background: #e65100;
+  box-shadow: 0 2px 12px #0002;
+}
+.delete-btn {
+  background: #d32f2f;
+}
+.delete-btn:hover {
+  background: #b71c1c;
+}
+.edit-btn {
+  background: #00bfa5;
+  color: #fff;
+}
+.edit-btn:hover {
+  background: #009e88;
+}
+.fetch-btn {
+  background: #ff6f00;
+}
+.fetch-btn:hover {
+  background: #e65100;
+}
+
+#allAnnoncesList {
+  list-style: none;
+  padding: 0;
+}
+#allAnnoncesList li {
+  background: #f0f0f0;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#allAnnoncesList li strong {
+  color: #ff6f00;
+}
+
+#imagePreviewContainer,
+#createdAnnonceImagePreview,
+#annonceDetails img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+}
+#imagePreviewContainer img,
+#createdAnnonceImagePreview img,
+#annonceDetails img {
+  max-width: 80px;
+  max-height: 80px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px #0002;
+}
+
+.category-list {
+  font-size: 0.95em;
+  color: #555;
+  background: #f9f9f9;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+}
+.category-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.category-list li strong {
+  color: #ff6f00;
+}

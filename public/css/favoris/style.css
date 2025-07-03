@@ -1,0 +1,124 @@
+/* Header Leboncoin */
+.main-header-leboncoin {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px #0001;
+  padding: 18px 0 14px 0;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 0 0 12px 12px;
+  z-index: 100;
+}
+.header-btn {
+  padding: 10px 22px;
+  font-size: 1em;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  box-shadow: 0 1px 6px #0001;
+}
+.header-btn-orange {
+  background: #ff6f00;
+  color: #fff;
+}
+.header-btn-orange:hover {
+  background: #e65100;
+}
+.header-btn-yellow {
+  background: #ffc107;
+  color: #333;
+}
+.header-btn-yellow:hover {
+  background: #ffb300;
+}
+.header-btn-outline {
+  background: #fff;
+  color: #ff6f00;
+  border: 1.5px solid #ff6f00;
+}
+.header-btn-outline:hover {
+  background: #ff6f00;
+  color: #fff;
+}
+.header-btn-red {
+  background: #d32f2f;
+  color: #fff;
+}
+.header-btn-red:hover {
+  background: #b71c1c;
+}
+/* Thème Leboncoin pour la page Favoris */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+}
+
+.favoris-container {
+  background: #fff;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #0001;
+  padding: 32px 28px 28px 28px;
+}
+
+.favoris-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.favoris-header h2 {
+  margin: 0;
+  color: #ff6f00;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.favoris-btn {
+  background: #ff6f00;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 6px #0001;
+}
+.favoris-btn:hover {
+  background: #e65100;
+  box-shadow: 0 2px 12px #0002;
+}
+.favoris-list {
+  list-style: none;
+  padding: 0;
+}
+.favoris-list li {
+  margin-bottom: 12px;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+.favoris-list li strong {
+  color: #ff6f00;
+}
+.form-message {
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.98em;
+  background: #fff3e0;
+  color: #ff6f00;
+  border: 1px solid #ffe0b2;
+}
