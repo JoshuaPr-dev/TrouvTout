@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <script src="JS/script.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TrouvTout - Annonces</title>
-    <link rel="stylesheet" href="/css/annonces/style.css" />
+    <link rel="stylesheet" href="./css/annonces/style.css" />
   </head>
   <body>
-    <!-- Header supprimé, il est généré dynamiquement par JS/header.js -->
-    <script src="JS/header.js"></script>
     <div class="container">
       <h1>Annonces</h1>
       <button id="gotoAuthBtn">Retour Connexion/Inscription</button>
-      <button id="logoutButton" style="margin-left: 10px">Se déconnecter</button>
+      <button id="logoutButton" style="margin-left: 10px">
+        Se déconnecter
+      </button>
       <div id="logoutMessage" class="form-message"></div>
       <h2>Créer une Annonce</h2>
       <form id="createAnnonceForm" enctype="multipart/form-data">
@@ -23,11 +22,22 @@
         </div>
         <div>
           <label for="annonceDescription">Description:</label>
-          <textarea id="annonceDescription" name="description" rows="3" required></textarea>
+          <textarea
+            id="annonceDescription"
+            name="description"
+            rows="3"
+            required
+          ></textarea>
         </div>
         <div>
           <label for="annoncePrix">Prix:</label>
-          <input type="number" id="annoncePrix" name="prix" step="0.01" required />
+          <input
+            type="number"
+            id="annoncePrix"
+            name="prix"
+            step="0.01"
+            required
+          />
         </div>
         <div>
           <label for="annonceLocalite">Localité:</label>
@@ -46,14 +56,22 @@
         </div>
         <div>
           <label for="annonceImage">Image(s) (optionnel, jusqu'à 5):</label>
-          <input type="file" id="annonceImage" name="images" accept="image/*" multiple />
+          <input
+            type="file"
+            id="annonceImage"
+            name="images"
+            accept="image/*"
+            multiple
+          />
         </div>
         <button type="submit">Créer Annonce</button>
       </form>
       <div id="createAnnonceMessage" class="form-message"></div>
       <div id="createdAnnonceImagePreview"></div>
       <h2>Consulter toutes les Annonces</h2>
-      <button id="getAllAnnoncesButton" class="fetch-btn">Charger toutes les Annonces</button>
+      <button id="getAllAnnoncesButton" class="fetch-btn">
+        Charger toutes les Annonces
+      </button>
       <div id="getAllAnnoncesMessage" class="form-message"></div>
       <ul id="allAnnoncesList"></ul>
       <div id="annonceDetails" style="margin-top: 20px"></div>
@@ -67,11 +85,20 @@
           </div>
           <div>
             <label for="updateAnnonceDescription">Description:</label>
-            <textarea id="updateAnnonceDescription" name="description" rows="3"></textarea>
+            <textarea
+              id="updateAnnonceDescription"
+              name="description"
+              rows="3"
+            ></textarea>
           </div>
           <div>
             <label for="updateAnnoncePrix">Prix:</label>
-            <input type="number" id="updateAnnoncePrix" name="prix" step="0.01" />
+            <input
+              type="number"
+              id="updateAnnoncePrix"
+              name="prix"
+              step="0.01"
+            />
           </div>
           <div>
             <label for="updateAnnonceLocalite">Localité:</label>
@@ -79,14 +106,24 @@
           </div>
           <div>
             <label for="updateAnnonceCategoryId">ID Catégorie:</label>
-            <input type="number" id="updateAnnonceCategoryId" name="category_id" />
+            <input
+              type="number"
+              id="updateAnnonceCategoryId"
+              name="category_id"
+            />
           </div>
-          <button type="submit" class="edit-btn">Appliquer Modifications</button>
-          <button type="button" id="cancelUpdateAnnonce" class="delete-btn">Annuler</button>
+          <button type="submit" class="edit-btn">
+            Appliquer Modifications
+          </button>
+          <button type="button" id="cancelUpdateAnnonce" class="delete-btn">
+            Annuler
+          </button>
         </form>
         <div id="updateAnnonceMessage" class="form-message"></div>
       </div>
     </div>
-    <script src="/JS/annonces.js"></script>
+    <script src="./JS/header.js"></script>
+    <script src="./JS/script.js"></script>
+    <script src="./JS/annonces.js"></script>
   </body>
 </html>
